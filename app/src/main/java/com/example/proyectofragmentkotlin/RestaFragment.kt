@@ -22,7 +22,10 @@ class RestaFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
             val resultado = RestaFragmentArgs.fromBundle(it).resultadoResta
+            val num1Mostrar = RestaFragmentArgs.fromBundle(it).num1Rest
+            val num2Mostrar = RestaFragmentArgs.fromBundle(it).num2Rest
             textViewResultadoResta.text = resultado
+            textViewRestaProceso.text = "$num1Mostrar - $num2Mostrar"
         }
     }
 

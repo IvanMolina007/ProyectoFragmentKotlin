@@ -8,17 +8,59 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado Resta"
+            android:textAlignment="center"
+            android:textColor="#03A9F4"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textViewResultadoResta"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
             android:text="No llego nada"
-            android:textSize="36sp"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Proceso"
+            android:textAlignment="center"
+            android:textColor="#03A9F4"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoResta" />
+
+        <TextView
+            android:id="@+id/textViewRestaProceso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No llego nada"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

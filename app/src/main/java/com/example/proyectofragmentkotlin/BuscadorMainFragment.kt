@@ -23,16 +23,6 @@ class BuscadorMainFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_buscador_main, container, false)
     }
 
-    companion object {
-
-        fun newInstance(param1: String, param2: String) =
-            BuscadorMainFragment().apply {
-                arguments = Bundle().apply {
-
-                }
-            }
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val BASE_URL = "https://google.com"
         val SEARCH_PATH = "/search?q="

@@ -64,6 +64,12 @@
         <argument
             android:name="resultadoResta"
             app:argType="string" />
+        <argument
+            android:name="num1Rest"
+            app:argType="string" />
+        <argument
+            android:name="num2Rest"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/multiFragment"
@@ -72,6 +78,10 @@
         tools:layout="@layout/fragment_multi" >
         <argument
             android:name="resultadoMulti"
+            app:argType="string" />
+        <argument android:name="num1Multi" />
+        <argument
+            android:name="num2Multi"
             app:argType="string" />
     </fragment>
     <fragment
@@ -82,16 +92,18 @@
         <argument
             android:name="resultadoDiv"
             app:argType="string" />
+        <argument
+            android:name="num1Div"
+            app:argType="string" />
+        <argument
+            android:name="num2Div"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/camaraMainFragment"
         android:name="com.example.proyectofragmentkotlin.CamaraMainFragment"
         android:label="fragment_camara_main"
-        tools:layout="@layout/fragment_camara_main" >
-        <action
-            android:id="@+id/action_camaraMainFragment_to_galeriaFragment"
-            app:destination="@id/galeriaFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_camara_main" />
     <fragment
         android:id="@+id/buscadorMainFragment"
         android:name="com.example.proyectofragmentkotlin.BuscadorMainFragment"
@@ -105,11 +117,15 @@
         <argument
             android:name="resultadoReglaDe3"
             app:argType="string" />
+        <argument
+            android:name="num1ReglaDe3"
+            app:argType="string" />
+        <argument
+            android:name="num2ReglaDe3"
+            app:argType="string" />
+        <argument
+            android:name="num3ReglaDe3"
+            app:argType="string" />
     </fragment>
-    <fragment
-        android:id="@+id/galeriaFragment"
-        android:name="com.example.proyectofragmentkotlin.GaleriaFragment"
-        android:label="fragment_galeria"
-        tools:layout="@layout/fragment_galeria" />
 
 </navigation>

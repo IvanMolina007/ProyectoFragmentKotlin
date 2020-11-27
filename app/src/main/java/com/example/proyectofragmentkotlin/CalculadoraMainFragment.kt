@@ -44,7 +44,7 @@ class CalculadoraMainFragment : Fragment() {
                         resultado3 = (z * y)/x
                     }
 
-                    val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToReglaDe3Fragment(resultadoReglaDe3 = resultado3.toString())
+                    val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToReglaDe3Fragment(resultadoReglaDe3 = resultado3.toString(), num1ReglaDe3 = x.toString(), num2ReglaDe3 = y.toString(), num3ReglaDe3 = z.toString())
                     Navigation.findNavController(it).navigate(directions)
                 }
             } else {
@@ -60,16 +60,16 @@ class CalculadoraMainFragment : Fragment() {
                     } else {
                         if (radioButtonResta.isChecked) {
                             resultado = num1 - num2
-                            val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToRestaFragment(resultadoResta = resultado.toString())
+                            val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToRestaFragment(resultadoResta = resultado.toString(), num1Rest = num1.toString(), num2Rest = num2.toString())
                             Navigation.findNavController(it).navigate(directions)
                         } else {
                             if (radioButtonMulti.isChecked) {
                                 resultado = num1 * num2
-                                val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToMultiFragment(resultadoMulti = resultado.toString())
+                                val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToMultiFragment(resultadoMulti = resultado.toString(), num1Multi = num1.toString(), num2Multi = num2.toString())
                                 Navigation.findNavController(it).navigate(directions)
                             } else {
                                 resultado = num1 / num2
-                                val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToDivFragment(resultadoDiv = resultado.toString())
+                                val directions = CalculadoraMainFragmentDirections.actionCalculadoraMainFragmentToDivFragment(resultadoDiv = resultado.toString(), num1Div = num1.toString(), num2Div = num2.toString())
                                 Navigation.findNavController(it).navigate(directions)
                             }
                         }

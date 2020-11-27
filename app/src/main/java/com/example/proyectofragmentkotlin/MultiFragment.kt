@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_multi.*
+import kotlinx.android.synthetic.main.fragment_resta.*
 import kotlinx.android.synthetic.main.fragment_suma.*
 
 class MultiFragment : Fragment() {
@@ -22,7 +23,10 @@ class MultiFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
             val resultado = MultiFragmentArgs.fromBundle(it).resultadoMulti
+            val num1Mostrar = MultiFragmentArgs.fromBundle(it).num1Multi
+            val num2Mostrar = MultiFragmentArgs.fromBundle(it).num2Multi
             textViewResultadoMulti.text = resultado
+            textViewMultiProceso.text = "$num1Mostrar x $num2Mostrar"
         }
     }
 
