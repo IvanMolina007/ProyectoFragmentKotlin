@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.proyectofragmentkotlin.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_calculadoraMainFragment"
+            app:destination="@id/calculadoraMainFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_camaraMainFragment"
+            app:destination="@id/camaraMainFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_buscadorMainFragment"
+            app:destination="@id/buscadorMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculadoraMainFragment"
+        android:name="com.example.proyectofragmentkotlin.CalculadoraMainFragment"
+        android:label="fragment_calculadora_main"
+        tools:layout="@layout/fragment_calculadora_main" >
+        <action
+            android:id="@+id/action_calculadoraMainFragment_to_sumaFragment"
+            app:destination="@id/sumaFragment" />
+        <action
+            android:id="@+id/action_calculadoraMainFragment_to_restaFragment"
+            app:destination="@id/restaFragment" />
+        <action
+            android:id="@+id/action_calculadoraMainFragment_to_multiFragment"
+            app:destination="@id/multiFragment" />
+        <action
+            android:id="@+id/action_calculadoraMainFragment_to_divFragment"
+            app:destination="@id/divFragment" />
+        <action
+            android:id="@+id/action_calculadoraMainFragment_to_reglaDe3Fragment"
+            app:destination="@id/reglaDe3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sumaFragment"
+        android:name="com.example.proyectofragmentkotlin.SumaFragment"
+        android:label="fragment_suma"
+        tools:layout="@layout/fragment_suma" >
+        <argument
+            android:name="resultadoSum"
+            app:argType="string" />
+        <argument
+            android:name="Num1Sum"
+            app:argType="string" />
+        <argument
+            android:name="Num2Sum"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaFragment"
+        android:name="com.example.proyectofragmentkotlin.RestaFragment"
+        android:label="fragment_resta"
+        tools:layout="@layout/fragment_resta" >
+        <argument
+            android:name="resultadoResta"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiFragment"
+        android:name="com.example.proyectofragmentkotlin.MultiFragment"
+        android:label="fragment_multi"
+        tools:layout="@layout/fragment_multi" >
+        <argument
+            android:name="resultadoMulti"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/divFragment"
+        android:name="com.example.proyectofragmentkotlin.DivFragment"
+        android:label="fragment_div"
+        tools:layout="@layout/fragment_div" >
+        <argument
+            android:name="resultadoDiv"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/camaraMainFragment"
+        android:name="com.example.proyectofragmentkotlin.CamaraMainFragment"
+        android:label="fragment_camara_main"
+        tools:layout="@layout/fragment_camara_main" >
+        <action
+            android:id="@+id/action_camaraMainFragment_to_galeriaFragment"
+            app:destination="@id/galeriaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buscadorMainFragment"
+        android:name="com.example.proyectofragmentkotlin.BuscadorMainFragment"
+        android:label="fragment_buscador_main"
+        tools:layout="@layout/fragment_buscador_main" />
+    <fragment
+        android:id="@+id/reglaDe3Fragment"
+        android:name="com.example.proyectofragmentkotlin.ReglaDe3Fragment"
+        android:label="fragment_regla_de3"
+        tools:layout="@layout/fragment_regla_de3" >
+        <argument
+            android:name="resultadoReglaDe3"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/galeriaFragment"
+        android:name="com.example.proyectofragmentkotlin.GaleriaFragment"
+        android:label="fragment_galeria"
+        tools:layout="@layout/fragment_galeria" />
+
+</navigation>
